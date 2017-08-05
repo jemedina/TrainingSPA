@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spaApp">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <style>
+        body, html {
+            margin: 0;
+        }
+        header {
+            width: 100%;
+            background-color: rgba(200,100,100,0.5);
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/profile">Profile</a></li>
+        </ul>
+    </header>
+    <div ng-view=""></div>
+    <script src="/vendor/angular.min.js"></script>
+    <script src="/vendor/angular-route.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
